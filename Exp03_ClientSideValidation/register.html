@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<!-- 
+Declares the document type and version of HTML. 
+HTML5 is used here. --> 
+<html lang="en"> 
+<!-- 
+Root element of the webpage. 
+lang="en" specifies the language as English. --> 
+<head> 
+<meta charset="UTF-8"> 
+<!-- 
+Sets character encoding to UTF-8. 
+This allows special characters to display correctly. --> 
+<title>Registration - JavaScript Validation</title> 
+<!-- 
+Title displayed on the browser tab. --> 
+</head> 
+<body> 
+<h2>User Registration</h2> 
+<!-- 
+Heading displayed on the webpage. --> 
+<!-- 
+Registration Form 
+onsubmit="return validateRegister()" - Calls the JavaScript function validateRegister() when the form is 
+submitted. - If the function returns true → form submits. - If the function returns false → submission stops. 
+autocomplete="off" - Prevents browsers from auto-filling previous values. --> 
+<form onsubmit="return validateRegister()" autocomplete="off"> 
+<!-- Name Input Field --> 
+Name: 
+<input type="text" id="regName"><br><br> 
+<!--      type="text" → Accepts normal text input. 
+        id="regName" → Used to access this field in JavaScript. 
+    --> 
+ 
+    <!-- Email Input Field --> 
+    Email: 
+    <input type="text" id="regEmail" autocomplete="off"><br><br> 
+    <!-- 
+        id="regEmail" → Used in JavaScript for validation. 
+        autocomplete="off" → Prevents browser email suggestions. 
+    --> 
+ 
+    <!-- Password Input Field --> 
+    Password: 
+    <input type="password" id="regPassword"><br><br> 
+    <!-- 
+        type="password" → Hides characters while typing. 
+        id="regPassword" → Used for password validation. 
+    --> 
+ 
+    <!-- Confirm Password Field --> 
+    Confirm Password: 
+    <input type="password" id="regConfirm"><br><br> 
+    <!-- 
+        Used to confirm the password. 
+        JavaScript checks whether password and confirm password match. 
+    --> 
+ 
+    <!-- Submit Button --> 
+    <input type="submit" value="Register"> 
+    <!-- 
+        When clicked, the form submission process starts. 
+        This triggers the validateRegister() function. 
+    --> 
+ 
+</form> 
+ 
+<!-- 
+    External JavaScript File 
+    This file contains the validateRegister() function. 
+    It performs form validation like: 
+        - Checking empty fields 
+        - Valid email format 
+        - Password length 
+        - Matching passwords --> 
+<script src="script.js"></script> 
+ 
+</body> 
+</html>
