@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+<!-- 
+Week 2 – Experiment 2 
+Bootstrap Enhanced Shopping Cart Application 
+Registration Page using Bootstrap 5 --> 
+<html lang="en"> 
+<head> 
+<!-- Character encoding for proper text display --> 
+<meta charset="UTF-8"> 
+<!-- Viewport meta tag for responsive design --> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Shopping Cart - Register (Bootstrap)</title> 
+<!-- Bootstrap 5 CSS CDN --> 
+<!-- This link imports Bootstrap styles without installing locally --> 
+<link 
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+rel="stylesheet"> 
+</head> 
+<body> 
+<!-- ================= NAVBAR ================= --> 
+<!-- 
+navbar-expand-lg  → Expands navbar on large screens 
+navbar-dark bg-dark → Dark themed navbar --> 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+<div class="container"> 
+<!-- Brand Name --> 
+<a class="navbar-brand" href="#">MyShop</a> 
+<!-- Toggler button for mobile view --> 
+<button class="navbar-toggler" type="button" 
+data-bs-toggle="collapse" 
+data-bs-target="#navbarNav"> 
+<span class="navbar-toggler-icon"></span> 
+</button> 
+<!-- Collapsible Menu Items --> 
+<div class="collapse navbar-collapse" id="navbarNav"> 
+<ul class="navbar-nav ms-auto"> 
+<!-- ms-auto pushes menu to right side --> 
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+<li class="nav-item"><a class="nav-link" 
+href="catalog.html">Catalog</a></li>
+    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li> 
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li> 
+        <li class="nav-item"><a class="nav-link active" 
+href="register.html">Register</a></li> 
+      </ul> 
+    </div> 
+ 
+  </div> 
+</nav> 
+ 
+<!-- ================= REGISTRATION FORM SECTION ================= --> 
+ 
+<!-- 
+    container → Centers content with proper margins 
+    mt-5 → Margin top spacing --> 
+<div class="container mt-5"> 
+ 
+    <!-- 
+        row justify-content-center → Center horizontally 
+        col-md-6 → Takes 6 columns on medium screens and above 
+    --> 
+    <div class="row justify-content-center"> 
+        <div class="col-md-6"> 
+ 
+            <!-- Card component for clean form layout --> 
+            <div class="card shadow"> 
+                <div class="card-body"> 
+ 
+                    <h3 class="text-center mb-4">User Registration</h3> 
+ 
+                    <!-- Registration Form --> 
+                    <form action="#" method="post"> 
+ 
+                        <!-- Full Name --> 
+                        <div class="mb-3"> 
+                            <!-- form-label styles the label --> 
+                            <label class="form-label">Full Name</label> 
+ 
+                            <!-- 
+                                form-control styles input fields 
+                                required enables basic HTML validation 
+                            --> 
+                            <input type="text" class="form-control" 
+                                   placeholder="Enter your full name" required> 
+                        </div> 
+ 
+                        <!-- Email --> 
+                        <div class="mb-3"> 
+                            <label class="form-label">Email Address</label> 
+                            <input type="email" class="form-control" 
+                                   placeholder="Enter your email" required> 
+                                                 </div> 
+ 
+                        <!-- Password --> 
+                        <div class="mb-3"> 
+                            <label class="form-label">Password</label> 
+                            <input type="password" class="form-control" 
+                                   placeholder="Enter password" required> 
+                        </div> 
+ 
+                        <!-- Confirm Password --> 
+                        <div class="mb-3"> 
+                            <label class="form-label">Confirm Password</label> 
+                            <input type="password" class="form-control" 
+                                   placeholder="Confirm password" required> 
+                        </div> 
+ 
+                        <!-- Gender Selection using inline radio buttons --> 
+                        <div class="mb-3"> 
+                            <label class="form-label d-block">Gender</label> 
+ 
+                            <!-- form-check is Bootstrap class for radio/checkbox --> 
+                            <div class="form-check form-check-inline"> 
+                                <input class="form-check-input" type="radio" 
+name="gender" required> 
+                                <label class="form-check-label">Male</label> 
+                            </div> 
+ 
+                            <div class="form-check form-check-inline"> 
+                                <input class="form-check-input" type="radio" 
+name="gender"> 
+                                <label class="form-check-label">Female</label> 
+                            </div> 
+                        </div> 
+ 
+                        <!-- Submit Button --> 
+                        <div class="d-grid"> 
+                            <!-- 
+                                btn btn-warning → Bootstrap button styling 
+                                d-grid → Makes button full width 
+                            --> 
+                            <button type="submit" class="btn btn-warning"> 
+                                Register 
+                            </button> 
+                        </div> 
+ 
+                    </form> 
+ 
+                </div> 
+            </div> 
+ 
+        </div>
+        </div> 
+</div> 
+<!-- Bootstrap JavaScript Bundle --> 
+<!-- Required for navbar toggler functionality --> 
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+"></script> 
+</body> 
+</html>
