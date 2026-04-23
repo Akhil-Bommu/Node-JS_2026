@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<!-- 
+This tells the browser that this is an HTML5 document. 
+without this, the browser may not behave properly --> 
+<html> 
+<!--Root element of the Web page--> 
+<head> 
+<meta charset="UTF-8"> 
+<!--Supports all characters--> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<!--Makes page responsive on mobile--> 
+<title>Weather Application</title> 
+<!--Title shown on browser tab--> 
+<!--Connecting CSS file--> 
+<link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+<!--Main Heading of the page--> 
+<h1>
+🌤
+ Simple Weather Application</h1> 
+<!-- 
+Input box where user enters city name. 
+id = "city" is very important. 
+JavaScript will use this id to read user input. --> 
+<input type="text" id = "city" placeholder="Enter City Name"> 
+<!-- 
+Button to trigger weather fetching When clicked, it calls getWeather() function 
+from script.js --> 
+  <button onclick="getWeather()">Get Weather</button> 
+<!--This div is used to display weather result. 
+Javascript will update content inside this div--> 
+<div id="result"> 
+<!--Weather details will appear here--> 
+</div> 
+<!-- 
+Connecting external JavaScript file. Always place the script at the bottom of 
+the body. Because HTML should load first, then JS --> 
+<script src="script.js"></script> 
+</body> 
+</html>
