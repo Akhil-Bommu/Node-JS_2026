@@ -1,0 +1,123 @@
+/* ========================================================= 
+GLOBAL STYLING 
+This section applies styling to the entire webpage 
+========================================================= */ 
+/* 
+body selector targets the complete webpage. 
+We set font, background and alignment here. 
+*/ 
+body { 
+font-family: Arial, sans-serif;   /* Sets clean readable font */ 
+background: linear-gradient(to right, #74ebd5, #9face6); 
+/* Creates smooth gradient background */ 
+margin: 0;           
+padding: 0;          
+display: flex;       
+/* Removes default browser margin */ 
+/* Removes default padding */ 
+/* Enables flexbox layout */ 
+justify-content: center;  /* Horizontally center content */ 
+align-items: center;      
+/* Vertically center content */ 
+height: 100vh;       
+} 
+/* Full height of screen */ 
+/* ========================================================= 
+MAIN CONTAINER STYLING 
+We wrap content inside body visually using text alignment 
+========================================================= */ 
+/*
+Since we do not have a separate container div, 
+we apply text alignment globally. 
+*/ 
+body { 
+text-align: center; 
+} 
+/* ========================================================= 
+HEADING STYLING 
+========================================================= */ 
+/* 
+Styles the main heading of the page 
+*/ 
+h1 { 
+} 
+color: #333;            
+margin-bottom: 20px;    
+/* Dark grey text */ 
+/* Space below heading */ 
+/* ========================================================= 
+INPUT FIELD STYLING 
+========================================================= */ 
+/* 
+Styles the city input text box 
+*/ 
+input { 
+padding: 10px;          
+width: 250px;           
+border-radius: 5px;     
+/* Space inside input box */ 
+/* Fixed width */ 
+/* Rounded corners */ 
+border: 1px solid #ccc; /* Light border */ 
+font-size: 16px;        
+/* Readable text size */ 
+} 
+/* 
+When user clicks inside input box, 
+this style will be applied 
+*/ 
+input:focus { 
+outline: none;                  
+border: 1px solid #007BFF;      
+} 
+/* Removes default blue outline */ 
+/* Blue border on focus */ 
+/* ========================================================= 
+BUTTON STYLING 
+========================================================= */ 
+/* 
+Styles the Get Weather button
+*/ 
+button { 
+padding: 10px 15px;     
+margin-left: 5px;       
+border: none;           
+border-radius: 5px;     
+/* Space inside button */ 
+/* Space between input and button */ 
+/* Removes default border */ 
+/* Rounded corners */ 
+background-color: #007BFF;  /* Blue background */ 
+color: white;           
+/* White text */ 
+font-size: 15px;        
+cursor: pointer;        
+} 
+/* 
+/* Slightly bigger text */ 
+/* Changes cursor to pointer */ 
+Hover effect when mouse moves over button 
+*/ 
+button:hover { 
+background-color: #0056b3;   /* Darker blue on hover */ 
+} 
+/* ========================================================= 
+RESULT DISPLAY BOX 
+========================================================= */ 
+/* 
+Styles the weather result section 
+*/ 
+#result { 
+margin-top: 20px;       
+font-size: 18px;        
+color: #222;            
+} 
+/* 
+/* Space above result */ 
+/* Bigger text */ 
+/* Dark text */ 
+Paragraph styling inside result 
+*/ 
+#result p { 
+margin: 5px 0;          
+} 
