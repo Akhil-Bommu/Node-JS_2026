@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<!-- 
+Declares the document type as HTML5. --> 
+<html lang="en"> 
+<!-- 
+Root element of the HTML document. 
+lang="en" specifies the language as English. --> 
+<head> 
+<meta charset="UTF-8"> 
+<!-- 
+Sets character encoding to UTF-8. 
+Ensures proper display of text and symbols. --> 
+<title>User Login - JS Validation</title> 
+<!-- 
+Title shown on the browser tab. --> 
+</head> 
+<body> 
+<h2>User Login Form</h2> 
+<!-- 
+Main heading displayed on the webpage. --> 
+<!-- 
+Login Form Section 
+onsubmit="return validateLogin()" - When the user clicks the Login button, 
+the validateLogin() JavaScript function is executed. - If the function returns TRUE → Form submits. - If the function returns FALSE → Submission stops. --> 
+<form onsubmit="return validateLogin()"> 
+<!-- Email Label --> 
+<label>Email:</label><br> 
+<!-- Email Input Field --> 
+<input type="text" id="loginEmail"><br><br> 
+<!-- 
+type="text" → Accepts text input. 
+id="loginEmail" → Used in JavaScript to access and validate this field. --> 
+<!-- Password Label --> 
+<label>Password:</label><br> 
+<!-- Password Input Field --> 
+<input type="password" id="loginPassword"><br><br> 
+<!-- 
+type="password" → Hides characters while typing. 
+id="loginPassword" → Used in JavaScript for validation. --> 
+<!-- Submit Button --> 
+<input type="submit" value="Login"> 
+<!-- 
+Clicking this button triggers the form submission. 
+validateLogin() function is called. --> 
+</form> 
+<!-- 
+External JavaScript File 
+script.js should contain:  --> 
+<script src="script.js"></script> 
+</body> 
+</html> 
